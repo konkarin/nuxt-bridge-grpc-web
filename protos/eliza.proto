@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package buf.connect.demo.eliza.v1;
+
+service ElizaService {
+  rpc Say(SayRequest) returns (SayResponse) {}
+  rpc Converse(stream ConverseRequest) returns (stream ConverseResponse) {}
+  rpc Introduce(IntroduceRequest) returns (stream IntroduceResponse) {}
+}
+
+message SayRequest {
+  string sentence = 1;
+}
+
+message SayResponse {
+  string sentence = 1;
+}
+
+message ConverseRequest {
+  string sentence = 1;
+}
+
+message ConverseResponse {
+  string sentence = 1;
+}
+
+message IntroduceRequest {
+  string name = 1;
+}
+
+message IntroduceResponse {
+  string sentence = 1;
+}

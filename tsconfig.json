@@ -1,0 +1,29 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "target": "es2018",
+    "lib": ["dom"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "ignoreDeprecations": "5.0",
+    "verbatimModuleSyntax": false,
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "strict": true,
+    "types": ["node"]
+  },
+  "exclude": ["node_modules", "dist"],
+  "vueCompilerOptions": {
+    "target": 2.7
+  }
+}
