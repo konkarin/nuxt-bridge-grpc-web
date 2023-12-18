@@ -1,7 +1,7 @@
 import { http, HttpResponse } from "msw";
 
 import { encodeProtobuf } from "./grpc";
-import { SayResponse } from "~~/protos/eliza_pb";
+import { SayResponse } from "~/protos/eliza_pb";
 
 const BASE_URL = "https://demo.connect.build";
 

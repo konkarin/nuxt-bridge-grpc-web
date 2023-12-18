@@ -12,7 +12,7 @@ export const say = (sentence: string): Promise<SayResponse> => {
     SayResponse,
     grpc.UnaryMethodDefinition<SayRequest, SayResponse>
   >(ElizaService.Say, {
-    host: "https://demo.connect.build/",
+    host: "https://demo.connect.build",
   });
   client.start();
   client.send(request);
