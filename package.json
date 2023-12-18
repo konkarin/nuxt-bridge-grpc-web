@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-bridge-grpc-web",
+  "name": "nuxt-bridge-grpc-web-msw-sample",
   "version": "1.0.0",
   "private": true,
   "scripts": {
